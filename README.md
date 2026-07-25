@@ -10,13 +10,22 @@
 
 <p align="center">
   <a href="https://portfolio-ylyass-projects.vercel.app/">
-    <img src="https://img.shields.io/badge/PORTFOLIO-2563EB?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio">
+    <img
+      src="https://img.shields.io/badge/PORTFOLIO-2563EB?style=for-the-badge&logo=vercel&logoColor=white"
+      alt="Portfolio"
+    />
   </a>
   <a href="https://www.linkedin.com/in/ylyasnurmuhammedov">
-    <img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+    <img
+      src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
+      alt="LinkedIn"
+    />
   </a>
   <a href="mailto:nurmuhammedovylyas0909@gmail.com">
-    <img src="https://img.shields.io/badge/CONTACT-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+    <img
+      src="https://img.shields.io/badge/CONTACT-EA4335?style=for-the-badge&logo=gmail&logoColor=white"
+      alt="Email"
+    />
   </a>
 </p>
 
@@ -51,20 +60,16 @@ A Python 3.13 security proxy positioned between AI-agent hosts and MCP tool serv
 - 159 automated tests passing
 - Security, integration, property, and benchmark testing
 
-<p>
-  <img src="https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-F59E0B?style=flat-square" alt="In development">
-  <img src="https://img.shields.io/badge/PYTHON-3.13-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.13">
-  <img src="https://img.shields.io/badge/TESTS-159%20PASSING-22C55E?style=flat-square" alt="159 tests passing">
-  <img src="https://img.shields.io/badge/WAZUH-INTEGRATED-005571?style=flat-square" alt="Wazuh integrated">
-</p>
+**Status:** In development  
+**Stack:** Python 3.13 · MCP Python SDK · Pydantic · SQLite · Docker · Wazuh · pytest · Hypothesis
 
-> Runs locally. The public repository will be linked after the source code and documentation are prepared.
+> Runs locally. The public repository will be linked after the source code and documentation are ready.
 
 ### Architecture
 
 <p align="center">
   <img
-    src="https://github.com/Ylyass/Ylyass/blob/main/assets/mcp_architecture.png?raw=true"
+    src="./mcp_architecture.png"
     width="100%"
     alt="MCP Privilege Profiler architecture"
   />
@@ -82,24 +87,18 @@ A Python 3.13 security proxy positioned between AI-agent hosts and MCP tool serv
 
 A repeatable Garak assessment covering jailbreak and prompt-injection behaviour.
 
-The repository includes:
-
 - Documented test environment
-- Baseline assessment
+- Baseline and mitigated runs
 - Successful and failed cases
 - Failure-pattern analysis
 - OWASP LLM01 mapping
-- System-level mitigation
 - Before-and-after comparison
 - Remaining risks and limitations
 
-<p>
-  <a href="https://github.com/Ylyass/LLM-RedTeam-assessment">
-    <img src="https://img.shields.io/badge/REPOSITORY-VIEW-181717?style=flat-square&logo=github&logoColor=white" alt="View repository">
-  </a>
-  <img src="https://img.shields.io/badge/STATUS-COMPLETED-22C55E?style=flat-square" alt="Completed">
-  <img src="https://img.shields.io/badge/OWASP-LLM01-000000?style=flat-square&logo=owasp&logoColor=white" alt="OWASP LLM01">
-</p>
+**Status:** Completed  
+**Scope:** Garak · Llama 3.2 · OWASP LLM01
+
+[View repository](https://github.com/Ylyass/LLM-RedTeam-assessment)
 
 </td>
 
@@ -111,23 +110,18 @@ The repository includes:
 
 A local lab collecting Windows Event Logs and Sysmon telemetry for process, command-line, authentication, PowerShell, and file activity.
 
-Investigations included:
-
-- Simulated brute-force activity
-- Encoded PowerShell execution
-- Critical-alert investigation
+- Simulated brute-force investigation
+- Encoded PowerShell investigation
+- Critical-alert review
 - Process relationship analysis
 - False-positive confirmation
 - Scheduled-task detection gap
 - Detection-improvement documentation
 
-<p>
-  <img src="https://img.shields.io/badge/STATUS-LOCAL%20LAB-3B82F6?style=flat-square" alt="Local lab">
-  <img src="https://img.shields.io/badge/WAZUH-SIEM-005571?style=flat-square" alt="Wazuh">
-  <img src="https://img.shields.io/badge/SYSMON-WINDOWS-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Sysmon">
-</p>
+**Status:** Local lab  
+**Stack:** Wazuh · Sysmon · Windows Event Logs · PowerShell
 
-<sub>A public documentation repository will contain redacted screenshots, investigation reports, architecture, queries, and reusable configuration examples.</sub>
+A public documentation repository will contain redacted screenshots, investigation reports, architecture, queries, and reusable configuration examples.
 
 </td>
 </tr>
@@ -157,10 +151,16 @@ The application was tested with approximately 80 students and received 92% posit
 
 <p>
   <a href="https://final-year-project-b-dx9c.vercel.app/">
-    <img src="https://img.shields.io/badge/LIVE%20APPLICATION-OPEN-22C55E?style=flat-square&logo=vercel&logoColor=white" alt="Live application">
+    <img
+      src="https://img.shields.io/badge/LIVE%20APPLICATION-OPEN-22C55E?style=flat-square&logo=vercel&logoColor=white"
+      alt="Live application"
+    />
   </a>
   <a href="https://github.com/islam-mamedov/Final-Year-Project-B">
-    <img src="https://img.shields.io/badge/TEAM%20REPOSITORY-VIEW-181717?style=flat-square&logo=github&logoColor=white" alt="Team repository">
+    <img
+      src="https://img.shields.io/badge/TEAM%20REPOSITORY-VIEW-181717?style=flat-square&logo=github&logoColor=white"
+      alt="Team repository"
+    />
   </a>
 </p>
 
@@ -202,27 +202,21 @@ The application was tested with approximately 80 students and received 92% posit
 
 <td width="33%" valign="top">
 
-### Development
+### Engineering Stack
 
 `Python`  
-`TypeScript`  
 `PowerShell`  
 `Bash`  
 `Docker`  
 `GitHub Actions`  
 `pytest`  
-`Hypothesis`
+`Hypothesis`  
+`Ruff`  
+`Pyright`
 
 </td>
 </tr>
 </table>
-
-<p align="center">
-  <img
-    src="https://skillicons.dev/icons?i=python,ts,js,powershell,bash,docker,git,github,githubactions,linux,windows,aws,supabase,vercel,vscode&perline=15"
-    alt="Development tools and platforms"
-  />
-</p>
 
 ---
 
@@ -238,13 +232,13 @@ The application was tested with approximately 80 students and received 92% posit
 
 ---
 
-## Development Activity
+## GitHub Activity
 
 <p align="center">
   <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Ylyass&theme=github-compact&hide_border=true&area=true"
+    src="./github-metrics.svg"
     width="100%"
-    alt="Ylyas Nurmuhammedov GitHub contribution activity"
+    alt="Ylyas Nurmuhammedov GitHub metrics"
   />
 </p>
 
