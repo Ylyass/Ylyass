@@ -2,7 +2,7 @@
 
 <p align="center">
   <img
-    src="./assets/banner(1).png"
+    src="./assets/banner.png"
     width="100%"
     alt="Ylyas Nurmuhammedov — Security Engineer"
   >
