@@ -2,10 +2,10 @@
 
 <p align="center">
   <img
-    src="./assets/banner.png"
+    src="https://raw.githubusercontent.com/Ylyass/Ylyass/main/assets/banner.png"
     width="100%"
     alt="Ylyas Nurmuhammedov — Security Engineer"
-  >
+  />
 </p>
 
 <p align="center">
@@ -64,10 +64,10 @@ A Python 3.13 security proxy positioned between AI-agent hosts and MCP tool serv
 
 <p align="center">
   <img
-    src="./assets/mcp_architecture.png"
+    src="https://raw.githubusercontent.com/Ylyass/Ylyass/main/assets/mcp_architecture.png"
     width="100%"
     alt="MCP Privilege Profiler architecture"
-  >
+  />
 </p>
 
 ---
@@ -221,7 +221,7 @@ The application was tested with approximately 80 students and received 92% posit
   <img
     src="https://skillicons.dev/icons?i=python,ts,js,powershell,bash,docker,git,github,githubactions,linux,windows,aws,supabase,vercel,vscode&perline=15"
     alt="Development tools and platforms"
-  >
+  />
 </p>
 
 ---
@@ -245,7 +245,7 @@ The application was tested with approximately 80 students and received 92% posit
     src="https://github-readme-activity-graph.vercel.app/graph?username=Ylyass&theme=github-compact&hide_border=true&area=true"
     width="100%"
     alt="Ylyas Nurmuhammedov GitHub contribution activity"
-  >
+  />
 </p>
 
 ---
