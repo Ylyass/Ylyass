@@ -2,7 +2,7 @@
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/Ylyass/Ylyass/main/assets/banner.png"
+    src="https://github.com/Ylyass/Ylyass/blob/main/assets/banner.png?raw=true"
     width="100%"
     alt="Ylyas Nurmuhammedov — Security Engineer"
   />
@@ -64,7 +64,7 @@ A Python 3.13 security proxy positioned between AI-agent hosts and MCP tool serv
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/Ylyass/Ylyass/main/assets/mcp_architecture.png"
+    src="https://github.com/Ylyass/Ylyass/blob/main/assets/mcp_architecture.png?raw=true"
     width="100%"
     alt="MCP Privilege Profiler architecture"
   />
