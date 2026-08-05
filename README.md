@@ -1,81 +1,75 @@
 <!-- GitHub profile README: github.com/Ylyass -->
 
 <p align="center">
-  <img
-    src="./banner.png"
-    width="100%"
-    alt="Ylyas Nurmuhammedov — Security Engineer"
-  />
+  <img src="./banner.png" width="100%" alt="Ylyas Nurmuhammedov — Security Engineer focused on AI agent security and detection engineering" />
 </p>
 
 <p align="center">
-  <a href="https://portfolio-ylyass-projects.vercel.app/">
-    <img
-      src="https://img.shields.io/badge/PORTFOLIO-2563EB?style=for-the-badge&logo=vercel&logoColor=white"
-      alt="Portfolio"
-    />
-  </a>
-  <a href="https://www.linkedin.com/in/ylyasnurmuhammedov">
-    <img
-      src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"
-      alt="LinkedIn"
-    />
-  </a>
-  <a href="mailto:nurmuhammedovylyas0909@gmail.com">
-    <img
-      src="https://img.shields.io/badge/CONTACT-EA4335?style=for-the-badge&logo=gmail&logoColor=white"
-      alt="Email"
-    />
-  </a>
+  I build security controls for AI agents and systems where a small mistake can become a high-impact action.
+  <br />
+  My work focuses on least privilege, explainable enforcement, detection engineering, and reproducible security testing.
 </p>
-
----
-
-## Selected Work
-
-### MCP Privilege Profiler
-
-**Least-privilege security proxy for AI agents**
-
-A Python 3.13 security proxy positioned between AI-agent hosts and MCP tool servers. It profiles the tools required for a task, restricts unnecessary access, detects changes to tool definitions, and exports privacy-minimized security events to Wazuh.
-
-**Implemented controls**
-
-- `ALLOW`, `REQUIRE_APPROVAL`, and `DENY` decisions
-- Task-specific tool permissions
-- Filtered tool visibility
-- Path and host restrictions
-- Usage limits
-- Schema-drift detection
-- Fail-closed handling
-- Human-review controls
-- Wazuh audit events
-
-**Current results**
-
-- Integrated with Anthropic Claude Code
-- Completed two controlled dependency-review runs
-- Captured six successful MCP tool calls
-- Validated blocked actions through searchable Wazuh alerts
-- 159 automated tests passing
-- Security, integration, property, and benchmark testing
-
-**Status:** In development  
-**Stack:** Python 3.13 · MCP Python SDK · Pydantic · SQLite · Docker · Wazuh · pytest · Hypothesis
-
-> Runs locally. The public repository will be linked after the source code and documentation are ready.
-
-### Architecture
 
 <p align="center">
-  <img
-    src="./mcp_architecture.png"
-    width="100%"
-    alt="MCP Privilege Profiler architecture"
-  />
+  <a href="https://portfolio-ylyass-projects.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/ylyasnurmuhammedov"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:nurmuhammedovylyas0909@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
 </p>
 
+## Flagship project
+
+### [MCP Privilege Profiler](https://github.com/Ylyass/mcp-privilege-profiler)
+
+**A human-reviewed, least-privilege security proxy for MCP-based AI agents.**
+
+AI agents often receive access to more tools than one task requires. MCP Privilege Profiler sits between an agent host and an MCP tool server, profiles the tools used by a task, and turns that evidence into a policy that a person must review before enforcement.
+
+<p align="center">
+  <a href="https://github.com/Ylyass/mcp-privilege-profiler">
+    <img src="https://raw.githubusercontent.com/Ylyass/mcp-privilege-profiler/main/docs/assets/linkedin-project-overview.png" width="100%" alt="MCP Privilege Profiler architecture: AI agent host, security proxy, MCP tool server, privacy-minimized audit, and optional Wazuh bridge" />
+  </a>
+</p>
+
+<table>
+<tr>
+<td width="58%" valign="top">
+
+#### What it does
+
+- Exposes only the tools approved for the task
+- Enforces `ALLOW`, `REQUIRE_APPROVAL`, and `DENY`
+- Applies reviewed path, host, argument, rate, and task limits
+- Detects security-relevant changes to tool definitions
+- Fails closed when policy, audit, approval, or catalog checks fail
+- Produces privacy-minimized JSONL events for Wazuh
+
+</td>
+<td width="42%" valign="top">
+
+#### Verified evidence
+
+- **164** passing Python tests
+- **75/75** deterministic benchmark cases
+- Linux and Windows CI on Python 3.13 and 3.14
+- Real Claude Code profiling and enforced runs
+- Safe local demo with no credentials or Docker
+
+</td>
+</tr>
+</table>
+
+<p>
+  <a href="https://github.com/Ylyass/mcp-privilege-profiler"><img src="https://img.shields.io/badge/Source-181717?style=flat-square&logo=github&logoColor=white" alt="Source code" /></a>
+  <a href="https://github.com/Ylyass/mcp-privilege-profiler/blob/main/docs/engineering-report.md"><img src="https://img.shields.io/badge/Engineering_report-334155?style=flat-square&logo=readthedocs&logoColor=white" alt="Engineering report" /></a>
+  <a href="https://github.com/Ylyass/mcp-privilege-profiler/blob/main/docs/quickstart.md"><img src="https://img.shields.io/badge/Safe_demo-0F766E?style=flat-square&logo=python&logoColor=white" alt="Safe demo" /></a>
+  <img src="https://img.shields.io/badge/Status-Public_pre--alpha-B45309?style=flat-square" alt="Status: public pre-alpha" />
+</p>
+
+`Python 3.13/3.14` · `MCP Python SDK 2.0` · `Pydantic` · `SQLite` · `AnyIO` · `pytest` · `Hypothesis` · `Wazuh 4.14.6`
+
 ---
+
+## Other selected work
 
 <table>
 <tr>
@@ -83,136 +77,26 @@ A Python 3.13 security proxy positioned between AI-agent hosts and MCP tool serv
 
 ### [LLM Red Team Assessment](https://github.com/Ylyass/LLM-RedTeam-assessment)
 
-**Adversarial testing of a locally hosted Llama 3.2 model**
+**Controlled jailbreak testing of a local Llama 3.2 model.**
 
-A repeatable Garak assessment covering jailbreak and prompt-injection behaviour.
+I ran a baseline Garak assessment, designed a prompt-level mitigation, repeated the same test suite, and compared the results. The DAN module resistance score moved from **22% to 21%**, showing that the tested prompt-only defence did not improve this attack class.
 
-- Documented test environment
-- Baseline and mitigated runs
-- Successful and failed cases
-- Failure-pattern analysis
-- OWASP LLM01 mapping
-- Before-and-after comparison
-- Remaining risks and limitations
+`Garak` · `Ollama` · `OWASP LLM01` · `Adversarial testing`
 
-**Status:** Completed  
-**Scope:** Garak · Llama 3.2 · OWASP LLM01
-
-[View repository](https://github.com/Ylyass/LLM-RedTeam-assessment)
+[Read the assessment →](https://github.com/Ylyass/LLM-RedTeam-assessment/blob/main/assessment_report.md)
 
 </td>
-
 <td width="50%" valign="top">
-
-### Wazuh SIEM Home Lab
-
-**Windows endpoint monitoring and detection validation**
-
-A local lab collecting Windows Event Logs and Sysmon telemetry for process, command-line, authentication, PowerShell, and file activity.
-
-- Simulated brute-force investigation
-- Encoded PowerShell investigation
-- Critical-alert review
-- Process relationship analysis
-- False-positive confirmation
-- Scheduled-task detection gap
-- Detection-improvement documentation
-
-**Status:** Local lab  
-**Stack:** Wazuh · Sysmon · Windows Event Logs · PowerShell
-
-A public documentation repository will contain redacted screenshots, investigation reports, architecture, queries, and reusable configuration examples.
-
-</td>
-</tr>
-</table>
-
----
 
 ### [Swinburne Campus Mobile App](https://github.com/islam-mamedov/Final-Year-Project-B)
 
-**Cross-platform campus navigation and student-support application**
+**Cross-platform campus navigation and student-support application.**
 
-A team final-year project developed with Next.js, TypeScript, Capacitor, and Supabase.
+My work included backend route logic, assistant-service integration, request filtering, API rate limiting, JWT authentication, database Row-Level Security, security testing, and technical documentation.
 
-**My contributions**
+`Next.js` · `TypeScript` · `Capacitor` · `Supabase` · `RLS`
 
-- Backend route logic
-- Assistant service integration
-- Request filtering
-- API rate limiting
-- JWT authentication
-- Database Row-Level Security
-- Functional and security testing
-- High-request-volume testing
-- Technical documentation
-
-The application was tested with approximately 80 students and received 92% positive feedback.
-
-<p>
-  <a href="https://final-year-project-b-dx9c.vercel.app/">
-    <img
-      src="https://img.shields.io/badge/LIVE%20APPLICATION-OPEN-22C55E?style=flat-square&logo=vercel&logoColor=white"
-      alt="Live application"
-    />
-  </a>
-  <a href="https://github.com/islam-mamedov/Final-Year-Project-B">
-    <img
-      src="https://img.shields.io/badge/TEAM%20REPOSITORY-VIEW-181717?style=flat-square&logo=github&logoColor=white"
-      alt="Team repository"
-    />
-  </a>
-</p>
-
----
-
-## Technical Areas
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Security Engineering
-
-`Least Privilege`  
-`Policy Enforcement`  
-`Fail-Closed Design`  
-`Audit Logging`  
-`Schema-Drift Detection`  
-`RBAC`  
-`Row-Level Security`  
-`Rate Limiting`
-
-</td>
-
-<td width="33%" valign="top">
-
-### Detection and Testing
-
-`Wazuh`  
-`Sysmon`  
-`Windows Event Logs`  
-`Garak`  
-`OWASP LLM Top 10`  
-`MITRE ATT&CK`  
-`Atomic Red Team`  
-`Alert Investigation`
-
-</td>
-
-<td width="33%" valign="top">
-
-### Engineering Stack
-
-`Python`  
-`PowerShell`  
-`Bash`  
-`Docker`  
-`GitHub Actions`  
-`pytest`  
-`Hypothesis`  
-`Ruff`  
-`Pyright`
+[Open the live application →](https://final-year-project-b-dx9c.vercel.app/)
 
 </td>
 </tr>
@@ -220,29 +104,26 @@ The application was tested with approximately 80 students and received 92% posit
 
 ---
 
-## Certifications and Training
+## What I work with
 
-| Credential | Issuer | Status |
+| AI and agent security | Security engineering | Detection and validation |
 |---|---|---|
-| Cisco CyberOps Associate | Cisco Networking Academy | Completed · 2026 |
-| CCNA: Introduction to Networks | Cisco Networking Academy | Completed · 2025 |
-| CCNA: Switching, Routing and Wireless Essentials | Cisco Networking Academy | Completed · 2025 |
-| CCNA: Enterprise Networking, Security and Automation | Cisco Networking Academy | Completed · 2025 |
-| Security Analyst Pathway | TryHackMe | In progress |
+| MCP security, prompt injection, jailbreak assessment, tool-use controls | Least privilege, policy enforcement, fail-closed design, audit logging, RBAC | Wazuh, Sysmon, Windows Event Logs, MITRE ATT&CK, alert investigation |
+| Claude Code, Garak, Ollama, OWASP LLM Top 10 | Python, Pydantic, SQLite, APIs, rate limiting, Row-Level Security | pytest, Hypothesis, Ruff, Pyright, GitHub Actions, Docker |
+
+## Background
+
+- Cybersecurity graduate, Swinburne University of Technology, 2026
+- Cisco Networking Academy training in CyberOps and the CCNA pathway
+- Hands-on work across AI security, secure software architecture, SIEM monitoring, cloud security, networking, and automation
 
 ---
-
-## GitHub Activity
 
 <p align="center">
-  <img
-    src="./github-metrics.svg"
-    width="100%"
-    alt="Ylyas Nurmuhammedov GitHub metrics"
-  />
+  I am interested in security engineering, AI and agent security, and detection engineering opportunities.
+  <br />
+  If you are building governed AI agents or working on MCP security, I would be glad to connect.
 </p>
-
----
 
 <p align="center">
   <a href="https://portfolio-ylyass-projects.vercel.app/">Portfolio</a>
